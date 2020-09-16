@@ -3,14 +3,14 @@ YouTube Metadata
 
     import youtube_md
 
-url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-video = youtube_md.metadata(url)
+    url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    video = youtube_md.metadata(url)
 
-print(video.url())
+    print(video.url())
 
-print(video.title())
+    print(video.title())
 
-print(video.thumbnail())
+    print(video.thumbnail())
 
 
 
