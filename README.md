@@ -1,7 +1,7 @@
 # youtube_md
 YouTube Metadata
 
-import youtube_md
+    import youtube_md
 
 url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 video = youtube_md.metadata(url)
