@@ -16,4 +16,6 @@ This program will produce YouTube Metadata for videos similar to https://pypi.or
 <b>But with the abiliity to use the -cookies cookies.txt command to fix the 429 issue <b>
   
   
-To 
+
+
+Visit youtube.com with a computer that is not producing the 429 issue and save the cookies.txt from the firefox plugin, Then place into the same location as the youtube_md.py 
