@@ -12,7 +12,7 @@ print(video.title())
 
 print(video.thumbnail())
 
-
+>>> import pafy
 
 Requirements 
 
