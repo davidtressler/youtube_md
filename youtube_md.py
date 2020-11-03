@@ -19,8 +19,10 @@ class metadata:
         except:
             print("Error, update youtube-dl and check cookies.txt is in current directory")
 
-        into_jsondata = json.loads(out.decode('utf-8')) #Format into JSON
-
+        try:
+            into_jsondata = json.loads(out.decode('utf-8')) #Format into JSON
+        except:
+            pass
     def showall(self):
         pass
 
