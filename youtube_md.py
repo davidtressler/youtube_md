@@ -11,7 +11,10 @@ into_jsondata = {}
 class metadata:
     def __init__(self, link_url):
         global into_jsondata
-        self.link = link_url
+        try:
+            self.link = link_url
+        except:
+            pass
 
         try:
             proc = subprocess.Popen(["youtube-dl", "--cookies", "cookies.txt","-j", self.link],stdout=subprocess.PIPE,)
@@ -27,10 +30,16 @@ class metadata:
         pass
 
     def thumbnail(self):
-        return into_jsondata["thumbnails"][3]["url"]
+        try:
+            return into_jsondata["thumbnails"][3]["url"]
+        except:
+            pass
 
     def title(self):
-        return into_jsondata["title"]
+        try:
+            return into_jsondata["title"]
+        except:
+            pass
 
     def url(self):
         """ Finds Number Of Videos Formats, then sets count to minus 3, as this is HD with audio (needs more testing on range of videos formats)"""
@@ -43,7 +52,12 @@ class metadata:
                 break
         count = count - 1
 
-        return into_jsondata["formats"][count]["url"]
+        try:
+
+            return into_jsondata["formats"][count]["url"]
+        except:
+
+            pass
 
         #return into_jsondata
 
@@ -56,4 +70,7 @@ class metadata:
                 count = count + 1
             except:
                 break
-        return count - 1
+        try:
+            return count - 1
+        except:
+            pass
