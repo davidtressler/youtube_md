@@ -12,7 +12,9 @@ YouTube Metadata
 
     print(video.thumbnail())
 
-
+<h1> Install </h1>
+    
+    wget https://raw.githubusercontent.com/davidtressler/youtube_md/master/youtube_md.py
 
 <h1>Requirements</h1> 
 
