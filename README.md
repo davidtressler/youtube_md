@@ -1,5 +1,5 @@
 # youtube_md
-Produces YouTube Metadata including streamlinks. 
+Produces YouTube Metadata including stream links. 
 
     import youtube_md
 
